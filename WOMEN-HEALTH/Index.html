@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+
+    <title>Women-Health</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="logo.jpg" alt="Logo">
+                    <span>Women-care</span>
+                </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search...">
+                    <button>🔍</button>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#medical-history">Medical History</a></li>
+                        <li><a href="#medications">Medications</a></li>
+                        <li><a href="#exercises">Exercises</a></li>
+                        <li><a href="#hospitals">Hospitals</a></li>
+                        <li><a href="#mental-health">Mental-Health</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="container1">
+        <div class="hero">
+            <div class="hero-content">
+                <h1>BREAST CANCER<br>AWARENESS MONTH</h1>
+                <p>Empowering lives through early detection and support. Join us in the fight against breast cancer, because every life matters.</p>
+                <a href="#" class="cta-button">READ MORE</a>
+            </div>
+            <div class="hero-image">
+                <img src="Container.jpg" alt="Breast Cancer Awareness">
+            </div>
+        </div>
+    </main>
+
+    <main class="container2">
+        <!--HOME-->
+        <section id="home">
+            <div class="support-community">
+                <div class="support-image">
+                    <img src="Container2.jpg" alt="Woman hugging heart with breast cancer ribbon">
+                </div>
+                <div class="support-content">
+                    <h2>Welcome to our Support Community</h2>
+                    <p>Here, you'll find information, resources, and support for women dealing with breast cancer. We're here to help you through every step of your journey.</p>
+                    <div class="button-group">
+                        <a href="#" class="cta-button">READ MORE</a>
+                        <a href="#" class="contribute-button">CONTRIBUTE</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- ... Rest of the sections ... -->
+    </main>
+
+    <section id="medical-history">
+        <div class="left-column">
+            <h2>Why Add Your Medical History?</h2>
+            <p>Adding your medical history helps in keeping track of your past diagnoses, treatments, and other relevant medical information. It ensures that healthcare providers have accurate and comprehensive information to provide the best possible care. By maintaining an up-to-date medical history, you can also manage your health more effectively and make informed decisions about your treatment.</p>
+        </div>
+        <div class="right-column">
+            <h2>Medical History</h2>
+            <p>It's important to keep track of your medical history. Here you can log and review your past medical information.</p>
+            <button id="add-medical-history-button">Add Your Medical History</button>
+            
+            <div id="medical-history-form-section" class="form-section">
+                <form id="medical-history-form">
+                    <div class="form-group">
+                        <label for="diagnosis-date">Date of Diagnosis:</label>
+                        <input type="date" id="diagnosis-date" name="diagnosis-date" required>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="cancer-type">Type of Breast Cancer:</label>
+                        <select id="cancer-type" name="cancer-type" required>
+                            <option value="">Select type</option>
+                            <option value="ductal">Ductal Carcinoma</option>
+                            <option value="lobular">Lobular Carcinoma</option>
+                            <option value="inflammatory">Inflammatory Breast Cancer</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="stage">Stage:</label>
+                        <select id="stage" name="stage" required>
+                            <option value="">Select Stage</option>
+                            <option value="0">Stage 0</option>
+                            <option value="1">Stage I</option>
+                            <option value="2">Stage II</option>
+                            <option value="3">Stage III</option>
+                            <option value="4">Stage IV</option>
+                        </select>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="previous-treatments">Previous Treatments:</label>
+                        <textarea name="previous-treatments" id="previous-treatments" rows="4"></textarea>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="family-history">Family History of Breast Cancer:</label>
+                        <textarea name="family-history" id="family-history" rows="4"></textarea>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="other-conditions">Other Medical Conditions:</label>
+                        <textarea name="other-conditions" id="other-conditions" rows="4"></textarea>
+                    </div>
+    
+                    <button type="submit">Save Medical History</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <section id="medications">
+        <div class="left-column">
+            <h2>Why Add Your Medications?</h2>
+            <p>Keeping a record of your medications helps in managing your treatment effectively. It allows healthcare providers to understand your current regimen and make necessary adjustments to optimize your care. Accurate medication history prevents drug interactions and ensures you receive the best possible outcomes.</p>
+        </div>
+        <div class="right-column">
+            <h2>Medications</h2>
+            <p>Keeping a record of your medications helps in managing your treatment effectively.</p>
+            <button id="add-medications-button">Add Your Medications</button>
+    
+            <div id="medications-form-section" class="form-section" style="display: none;">
+                <form id="medications-form">
+                    <div class="form-group">
+                        <label for="medication-name">Medication Name:</label>
+                        <input type="text" id="medication-name" name="medication-name" required>
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="dosage">Dosage:</label>
+                        <input type="text" id="dosage" name="dosage" required>
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="frequency">Frequency:</label>
+                        <select id="frequency" name="frequency" required>
+                            <option value="">Select frequency</option>
+                            <option value="daily">Daily</option>
+                            <option value="twice-daily">Twice Daily</option>
+                            <option value="weekly">Weekly</option>
+                            <option value="as-needed">As Needed</option>
+                        </select>
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="start-date">Start Date:</label>
+                        <input type="date" id="start-date" name="start-date" required>
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="notes">Notes:</label>
+                        <textarea id="notes" name="notes" rows="4"></textarea>
+                    </div>
+            
+                    <button type="submit">Save Medication</button>
+                </form>
+            </div>
+        </div>
+    </section>
+<!--EXERCISES-->
+        <section id="exercises">
+            <h2>Recommend Exercises</h2>
+            <p>Discover exercises that can help improve your physical and ental well-being and after treatment.</p>
+        </section>
+
+        <!--HOSPITALS-->
+        <section iid="hospitals">
+            <h2>Nearby Hospitals and Doctors</h2>
+            <p>Find information about local healthcare providers specializing in breast cancer treatment.</p>
+        
+        </section>
+
+        <!--MENTAL HEALTH-->
+        <section id="mental-health">
+            <h2>Mental Health Support</h2>
+            <p>Your mental health is just as important as your physical healtg. Find resourcesand supprot here.</p>
+
+        </section>
+    </main>
+
+    <div id="chatbot-container" class="chatbot-closed">
+        <button id="chatbot-toggle">Chat with us</button>
+        <div class="chatbot">
+            <div class="chat-header">
+                <h3>Your Friendly Chat Champion</h3>
+            </div>
+            <div class="chat-messages">
+                <!-- Chat messages will be added here dynamically -->
+            </div>
+            <div class="chat-input">
+                <input type="text" placeholder="Type your message...">
+                <button>Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
